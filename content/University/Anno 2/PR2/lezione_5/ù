@@ -1,0 +1,22 @@
+public class Quadrato {
+  // Utilizzo un attributo di tipo 'Rettangolo'
+  // per rappresentare questo quadrato
+  private Rettangolo rettangolo;
+
+  public Quadrato(double x, double y, double lato) {
+    // Creo il mio quadrato come se fosse un rettangolo con i due lati uguali
+    rettangolo = new Rettangolo(x, y, lato, lato);
+  }
+
+  // L'area di questo quadrato è esattamente uguale all'area dell'attributo
+  // 'rettangolo'
+  public double area() {
+    return rettangolo.area();
+  }
+
+  // Per raddoppiare l'area di questo quadrato raddoppio l'area dell'attributo
+  // 'rettangolo'
+  public void raddoppia() {
+    rettangolo.raddoppia();
+  }
+}
